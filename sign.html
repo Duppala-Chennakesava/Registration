@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #181818;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+          
+        .container {
+            background-color: #ffffff;
+            margin: 50px auto;
+            border-radius: 15px;
+            display: flex;
+            padding: 40px;
+            width: 40%;
+            max-width: 500px;
+            
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        
+        input[type=text],
+        input[type=password],
+        input[type=email] {
+            width: 90%;
+            padding: 15px;
+            margin: 5px 0 20px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+    
+        button {
+            background-color: #3dc9df;
+            color: white;
+            padding: 15px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 90%;
+            border-radius: 5px;
+        }
+
+        .image img {
+            width: 300px;
+            height: auto;
+             padding-left: 90px;
+        }
+        .option{
+            
+            padding-bottom: 15px;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form>
+            <h1>Register Now</h1>
+            <div class="image">
+                <img src="image.png" alt="">
+            </div>
+            <label for="email">Enter Email </label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="psw">Enter Password</label>
+            <input type="password" name="psw" id="psw" required>
+
+            <label for="first_name">Enter First Name </label>
+            <input type="text" name="First_name" id="First_name" required>
+
+            <label for="last_name">Enter Last Name </label>
+            <input type="text" name="last_name" id="last_name" required>
+            <label for="phone"> Enter Phone Number </label>
+            <input type="text" name="phone" id="phone" required>
+            <div class="option">
+            <label for="country"> Country </label>
+            <select name="country" id="country">
+                <option value="">Select Country</option>
+                <option value="afghanistan">Afghanistan</option>
+                <option value="albania">Albania</option>
+                <option value="algeria">Algeria</option>
+                <option value="">India</option>
+            </select>
+
+            <label for="currency">Currency</label>
+            <select name="currency" id="currency">
+                <option value="">Select Currency</option>
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="gbp">GBP</option>
+                <option value="ind">IND</option>
+            </select>
+        </div>
+
+            <button type="submit">Open Account</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
